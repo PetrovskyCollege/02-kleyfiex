@@ -13,3 +13,4 @@ class Animal
 
 $animal1 = new Animal();
 echo $animal1->getOne();
+?>

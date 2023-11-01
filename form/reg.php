@@ -10,17 +10,17 @@
     <input type="text" name="login" id="login">
     <label for="pass">Пароль </label>
     <input type="password" name="pass" id="pass">
-    <button type="submit">Отпрвить</button>
+    <button type="submit">Отправить</button>
 </form>
 </body>
 </html>
 
 <?php
 if (isset($_GET["login"])) {
-    echo "<h2>Привет, GET " . $_GET["login"] . "! </h2>";
+    echo "<h2>Привет, " . $_GET["login"] . "! </h2>"; // передается через url  http://02-kleyfiex:8080/form/reg.php?login=me
 }
 
 if (isset($_POST["login"])) {
-    echo "<h2>Привет POST, " . $_POST["login"] . "! </h2>";
+    echo "<h2>Привет, " . $_POST["login"] . "! </h2>"; // передаеттся в теле http 
 }
-
+?>
